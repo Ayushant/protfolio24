@@ -1,0 +1,368 @@
+
+
+/* import font from font google === bai jamjuree */
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;500;600;700&display=swap');
+
+:root {
+ 
+    --color-body: #424242;
+    --color-headline: #0000;
+    --color-base: #686868;
+    --color-base2: #ffff;
+    --color-brand: #e0f780;
+    --color-brand2: #deff58;
+
+    --sidebar-width: 240px;
+    --font-base: "Bai Jamjuree"
+
+}
+
+
+body{
+
+    background-color: var(--color-base);
+    color: var(--color-body);
+
+    /* sans-serif is used if font is not available */
+    font-family: var(--font-base), sans-serif;
+
+
+}
+
+/* heading color.. font */
+h1,h2,h3,h4,h5,h6{
+    color: var(--color-headline);
+    font-weight: 700;
+}
+
+a{
+    text-decoration: none;
+    color: var(--color-body);
+    transition: all 0.4s ease;
+}
+
+
+
+a :hover{
+    color: #0000;
+    background-color: #424242;
+}
+
+.bg-base{
+    background-color: #4242;
+}
+
+
+img{
+    width: 100%;
+}
+
+.full-height{
+    min-height: 100vh;
+    height: 100%;
+    display: flex;
+    /* align-items: center; */
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+}
+
+.shadow-effect{
+    transition: all 0.5s;
+}
+
+.shadow-effect :hover{
+     
+    /* box-shadow: 5px 10px inset; */
+    box-shadow: 5px 10px #888888;
+    /* box-shadow: 5px 10px #888888; */
+    /* box-shadow: 6px 0 0 8px var(--color-brand); */
+}
+
+.iconbox{
+    width: 60px;
+    height: 60px;
+    /* position: relative; */
+    /* left: 20px; */
+    display: flex;
+    align-items: center;
+   /* align-items: unsafe; */
+    font-size: 32px;
+    background-color: #686868;
+    color: #424242;
+}
+
+/* navbar */
+
+.navbar{
+    background-color: #686868;
+}
+
+.navbar .nav-link{
+
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #0000;
+}
+
+.navbar .nav-link :hover {
+
+    color: #deff58;
+    color: #0000;
+}
+
+.navbar .nav-link.active{
+    color: #424242;
+}
+
+
+@media (min-width: 992px){
+
+    .navbar{
+
+        min-height: 100vh;
+        width: var(--sidebar-width);
+        background: linear-gradient(rgba(104, 104, 104, 0.8),rgba(66, 66, 66, 0.8)), url(../images/sidebar-img.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+
+    .navbar-brand img{
+
+        border: 4px solid var(--color-base2);
+    }
+
+    /* for fixing the title */
+    #content-wrapper{
+        padding-left: var(--sidebar-width);
+
+
+    }
+
+
+    /* ul li.nav-link :hover{
+        color: #0000;
+        background-color: #ffff;
+    } */
+
+}
+
+/* .hrr{
+
+    height: 200px;
+    color: #ffff;
+} */
+
+
+
+/* .text-brand{
+
+    
+    size: 220px;
+} */
+
+/* button */
+
+.btn{
+
+    padding: 12px 28px;
+    font-weight: 700;
+}
+
+.btn-brand{
+    background-color: #ffff;
+    border-color: #ffff;
+}
+
+
+
+.btn-brand :hover,
+.btn-brand :focus{
+    background-color: #deff58 ;
+    color: #ffff;
+    border-color: #ffff;
+}
+
+.link-custom{
+    font-weight: 700;
+    position: relative;
+
+}
+
+.link-custom::after{
+    content: "";
+    width: 0%;
+    height: 2px;
+    background-color: #f3070700;
+    position: absolute;
+    left: 0;
+    top: 110%;
+    transition: all 0.4s;
+}
+
+.link-custom:hover::after{
+    width: 100%;
+}
+
+
+/* design */
+
+.TOP{
+    transition-duration: 4000ms
+}
+
+
+/* Google Font CDN Link */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins" , sans-serif;
+}
+/* body{
+  min-height: 100vh;
+  width: 100%;
+  background: #c8e8e9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+} */
+/* .container{
+  width: 85%;
+  background: #fff;
+  border-radius: 6px;
+  padding: 20px 60px 30px 40px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+} */
+.container .content{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.container .content .left-side{
+  width: 25%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 15px;
+  position: relative;
+}
+.content .left-side::before{
+  content: '';
+  position: absolute;
+  height: 70%;
+  width: 2px;
+  right: -15px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #afafb6;
+}
+.content .left-side .details{
+  margin: 14px;
+  text-align: center;
+}
+.content .left-side .details i{
+  font-size: 30px;
+  color: #686868;
+  margin-bottom: 10px;
+}
+.content .left-side .details .topic{
+  font-size: 18px;
+  font-weight: 500;
+}
+.content .left-side .details .text-one,
+.content .left-side .details .text-two{
+  font-size: 14px;
+  color: #afafb6;
+}
+.container .content .right-side{
+  width: 75%;
+  margin-left: 75px;
+}
+.content .right-side .topic-text{
+  font-size: 23px;
+  font-weight: 600;
+  color: #424242;
+}
+.right-side .input-box{
+  height: 50px;
+  width: 100%;
+  margin: 12px 0;
+}
+.right-side .input-box input,
+.right-side .input-box textarea{
+  height: 100%;
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  background: #afafb6;
+  border-radius: 6px;
+  padding: 0 15px;
+  resize: none;
+}
+.right-side .message-box{
+  min-height: 110px;
+}
+.right-side .input-box textarea{
+  padding-top: 6px;
+}
+.right-side .button{
+  display: inline-block;
+  margin-top: 12px;
+}
+.right-side .button input[type="button"]{
+  color: #fff;
+  font-size: 18px;
+  outline: none;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  background: #ffff;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.button input[type="button"]:hover{
+  background: #686868;
+}
+
+@media (max-width: 950px) {
+  .container{
+    width: 90%;
+    padding: 30px 40px 40px 35px ;
+  }
+  .container .content .right-side{
+   width: 75%;
+   margin-left: 55px;
+}
+}
+@media (max-width: 820px) {
+  .container{
+    margin: 40px 0;
+    height: 100%;
+  }
+  .container .content{
+    flex-direction: column-reverse;
+  }
+ .container .content .left-side{
+   width: 100%;
+   flex-direction: row;
+   margin-top: 40px;
+   justify-content: center;
+   flex-wrap: wrap;
+ }
+ .container .content .left-side::before{
+   display: none;
+ }
+ .container .content .right-side{
+   width: 100%;
+   margin-left: 0;
+ }
+}
+
+
