@@ -22,7 +22,7 @@
     <nav class="navbar navbar-expand-lg navbar-light fixed-top">
         <div class="container flex-lg-column">
             <a class="navbar-brand mx-lg-auto mb-lg-4" href="#"><span class="h3 fw-bold d-block d-lg-none">Ayushant</span>
-            <img src="./assest/images/person1.jpeg" class="shadow d-none d-lg-block rounded-circle">
+            <img src="./assest/images/person1.jpeg" class="nav-3d shadow d-none d-lg-block rounded-circle">
             </a>
 
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -34,19 +34,19 @@
                 <ul class="navbar-nav ms-auto  flex-lg-column text-lg-center">
                    
                     <li class="nav-item">
-                        <a class="nav-link text-white shadow-lg" href="#home">Home</a>
+                        <a class="nav-link text-white shadow-lg nav-3d" href="#home">Home</a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link text-white shadow-lg" href="#skill">Skill</a>
+                        <a class="nav-link text-white shadow-lg nav-3d" href="#skill">Skill</a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link text-white shadow-lg" href="#about">About</a>
+                        <a class="nav-link text-white shadow-lg nav-3d" href="#about">About</a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link text-white shadow-lg" href="#work">Work</a>
+                        <a class="nav-link text-white shadow-lg nav-3d" href="#work">Work</a>
                     </li>
 
                     <!-- <li class="nav-item">
@@ -54,16 +54,31 @@
                     </li> -->
 
                     <li class="nav-item">
-                        <a class="nav-link text-white shadow" href="#connect">Stay Connect</a>
+                        <a class="nav-link text-white shadow nav-3d" href="#connect">Stay Connect</a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link text-white shadow" href="#contact">Contact</a>
+                        <a class="nav-link text-white shadow nav-3d" href="#contact">Contact</a>
                     </li>
                   
                 </ul>
             </div>
-
+          
+            <style>
+                .nav-3d {
+                  transition: transform 0.3s ease, box-shadow 0.3s ease;
+                }
+              
+                .nav-3d:hover {
+                  transform: translateY(-5px);
+                  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+                }
+              
+                .nav-3d:active {
+                  transform: translateY(0px);
+                  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+                }
+              </style>
         </div>
     </nav>
 
@@ -102,26 +117,26 @@
                     </div>
                 </div>
 
-                <div class="row">
+                <div class="row ">
                     <div class="col-md-4 p-3 shadow-effect">
-                        <div class="skill p-4 bg-base   rounded-4 ">
-                            <div class="iconbox shadow rounded-4">
-                                <i class="lab text-light shadow-none la-html5"></i>
+                        <div class="skill p-4 bg-base   rounded-4  ">
+                            <div class="shadow-none iconbox">
+                                <i class="lab text-light shadow-none la-html5 "></i>
                             </div>
-                            <h4 class="mt-4 mb-2  text-light">HTML</h4>
-                            <p class=" ">I have more than 2 year of experience in html</p>
-                            <a href="#" class="link-custom text-dark">Read More</a>
+                            <h4 class="mt-4 mb-2  text-light shadow-none">HTML</h4>
+                            <p class="shadow-none ">I have more than 2 year of experience in html</p>
+                            <a href="#" class="link-custom text-dark shadow-none">Read More</a>
                         </div>
                     </div>
                     
                     <div class="col-md-4 p-3 shadow-effect">
                         <div class="skill p-4 bg-base   rounded-4 ">
-                            <div class="iconbox shadow rounded-4">
+                            <div class="iconbox  shadow-none ">
                                 <i class="lab text-light shadow-none la-css3-alt"></i>
                             </div>
-                            <h4 class="mt-4 mb-2 text-light">CSS</h4>
-                            <p>I have more than 2 year of experience in html</p>
-                            <a href="#" class="link-custom text-dark">Read More</a>
+                            <h4 class="mt-4 mb-2 text-light shadow-none">CSS</h4>
+                            <p class="shadow-none">I have more than 2 year of experience in html</p>
+                            <a href="#" class="link-custom text-dark shadow-none">Read More</a>
                         </div>
                     </div>
 
@@ -129,48 +144,48 @@
                     
                     <div class="col-md-4 p-3 shadow-effect">
                         <div class="skill p-4 bg-base   rounded-4 ">
-                            <div class="iconbox shadow rounded-4">
+                            <div class="iconbox shadow-none ">
                                 <i class="las text-light shadow-none la-file-code"></i>
                             </div>
-                            <h4 class="mt-4 mb-2 text-light">Javascript</h4>
-                            <p>I have more than 2 year of experience in html</p>
-                            <a href="#" class="link-custom text-dark">Read More</a>
+                            <h4 class="mt-4 mb-2 text-light shadow-none">Javascript</h4>
+                            <p class="shadow-none">I have more than 2 year of experience in html</p>
+                            <a href="#" class="link-custom text-dark shadow-none">Read More</a>
                         </div>
                     </div>
 
                     <div class="col-md-4 p-3 shadow-effect">
-                        <div class="skill p-4 bg-base   rounded-4 ">
-                            <div class="iconbox shadow rounded-4">
+                        <div class="skill p-4 bg-base  rounded-4 ">
+                            <div class="iconbox shadow-none">
                                 <i class="lab text-light shadow-none la-bootstrap"></i>
                             </div>
                         
-                            <h4 class="mt-4 mb-2 text-light">Bootstrap</h4>
-                            <p>I have more than 2 year of experience in Bootstrap</p>
-                            <a href="#" class="link-custom text-dark">Read More</a>
+                            <h4 class="mt-4 mb-2 text-light shadow-none">Bootstrap</h4>
+                            <p class="shadow-none">I have more than 2 year of experience in Bootstrap</p>
+                            <a href="#" class="link-custom text-dark shadow-none">Read More</a>
                         
                     </div>
                     </div>
 
                     <div class="col-md-4 p-3 shadow-effect">
                         <div class="skill p-4 bg-base   rounded-4 ">
-                            <div class="iconbox shadow rounded-4">
+                            <div class="iconbox shadow-none">
                                 <i class="las text-light shadow-none la-file-code"></i>
                             </div>
-                            <h4 class="mt-4 mb-2 text-light">Jquery</h4>
-                            <p>I have more than 2 year of experience in Jquery</p>
-                            <a href="#" class="link-custom text-dark">Read More</a>
+                            <h4 class="mt-4 mb-2 text-light shadow-none">Jquery</h4>
+                            <p class="shadow-none">I have more than 2 year of experience in Jquery</p>
+                            <a href="#" class="link-custom text-dark shadow-none">Read More</a>
                         
                     </div>
                     </div>
 
                     <div class="col-md-4 p-3  shadow-effect">
                         <div class="skill p-4 bg-base   rounded-4 ">
-                            <div class="iconbox shadow rounded-4">
+                            <div class="iconbox shadow-none">
                                 <i class="lab la-react shadow-none text-light"></i>
                             </div>
-                            <h4 class="mt-4 mb-2 text-light">React js</h4>
-                            <p>I have more than 2 year of experience in React js</p>
-                            <a href="#" class="link-custom text-dark">Read More</a>
+                            <h4 class="mt-4 mb-2 text-light shadow-none">React js</h4>
+                            <p class="shadow-none">I have more than 2 year of experience in React js</p>
+                            <a href="#" class="link-custom text-dark shadow-none">Read More</a>
                         </div>
                     </div>
 
@@ -205,9 +220,9 @@
                             <!-- <div class="iconbox shadow rounded-4">
                                 <i class="lab text-light la-html5"></i>
                             </div> -->
-                            <h4 class=" text-light">10th</h4>
-                            <p>School: SS Nilkam English School,Passed with <span class="text-white"> 85% </span></p>
-                            <a href="#" class="link-custom text-dark">Read More</a>
+                            <h4 class=" text-light shadow-none">10th</h4>
+                            <p class="shadow-none">School: SS Nilkam English School,Passed with <span class="text-white shadow-none"> 85% </span></p>
+                            <a href="#" class="link-custom text-dark shadow-none">Read More</a>
                         </div>
                     </div>
 
@@ -218,9 +233,9 @@
                                 <!-- <div class="iconbox shadow rounded-4">
                                     <i class="lab text-light la-html5"></i>
                                 </div> -->
-                                <h4 class=" text-light">12th</h4>
-                                <p>School: SS Nilkam English School,Passed with <span class="text-white"> 81% </span></p>
-                                <a href="#" class="link-custom text-dark">Read More</a>
+                                <h4 class=" text-light shadow-none">12th</h4>
+                                <p class="shadow-none">School: SS Nilkam English School,Passed with <span class="text-white shadow-none"> 81% </span></p>
+                                <a href="#" class="link-custom text-dark shadow-none">Read More</a>
                             </div>
                         </div>
 
@@ -231,17 +246,17 @@
                                 <!-- <div class="iconbox shadow rounded-4">
                                     <i class="lab text-light la-html5"></i>
                                 </div> -->
-                                <h4 class=" text-light">Btech</h4>
-                                <p>University: Savitribai Phule University, Purssing</p>
-                                <a href="#" class="link-custom text-dark">Read More</a>
+                                <h4 class=" text-light shadow-none">Btech</h4>
+                                <p class="shadow-none">University: Savitribai Phule University, Purssing</p>
+                                <a href="#" class="link-custom text-dark shadow-none">Read More</a>
                             </div>
                         </div>
                               
 
                         <div class="row pd-4">
                             <div class="col-lg-8">
-                                <h6 class="text-white  text-brand">About</h6>
-                                <h1 class="text-dark">My Experience</h1>
+                                <h6 class="text-white  text-brand ">About</h6>
+                                <h1 class="text-dark ">My Experience</h1>
                             </div>
                         </div>
 
@@ -252,9 +267,9 @@
                                 <!-- <div class="iconbox shadow rounded-4">
                                     <i class="lab text-light la-html5"></i>
                                 </div> -->
-                                <h4 class=" text-light">InstoQR (Startup)</h4>
-                                <p>Working has a Intern, Role <a class="text-white"> UI/UX Designer Lead & Developer</a></p>
-                                <a href="https://www.linkedin.com/in/ayushant-khandekar-3645ba220/" class="link-custom text-dark">Read More</a>
+                                <h4 class=" text-light shadow-none">InstoQR (Startup)</h4>
+                                <p class="shadow-none">Working has a Intern, Role <a class="text-white shadow-none"> UI/UX Designer Lead & Developer</a></p>
+                                <a href="https://www.linkedin.com/in/ayushant-khandekar-3645ba220/" class="link-custom text-dark shadow-none">Read More</a>
                             </div>
                         </div>
 
@@ -264,9 +279,9 @@
                                 <!-- <div class="iconbox shadow rounded-4">
                                     <i class="lab text-light la-html5"></i>
                                 </div> -->
-                                <h4 class=" text-light">Marquardt (MNC)</h4>
-                                <p>Working has a Intern, Role <a class="text-white"> Software Developer </a></p>
-                                <a href="https://www.linkedin.com/in/ayushant-khandekar-3645ba220/" class="link-custom text-dark">Read More</a>
+                                <h4 class=" text-light shadow-none">Marquardt (MNC)</h4>
+                                <p class="shadow-none">Working has a Intern, Role <a class="text-white shadow-none"> Software Developer </a></p>
+                                <a href="https://www.linkedin.com/in/ayushant-khandekar-3645ba220/" class="link-custom text-dark shadow-none">Read More</a>
                             </div>
                         </div>
 
@@ -277,9 +292,9 @@
                                 <!-- <div class="iconbox shadow rounded-4">
                                     <i class="lab text-light la-html5"></i>
                                 </div> -->
-                                <h4 class=" text-light">Cognify T PVT</h4>
-                                <p>Working has a Intern, Role <a class="text-white"> Software Developer </a></p>
-                                <a href="https://www.linkedin.com/in/ayushant-khandekar-3645ba220/" class="link-custom text-dark">Read More</a>
+                                <h4 class=" text-light shadow-none">Cognify T PVT</h4>
+                                <p class="shadow-none">Working has a Intern, Role <a class="text-white shadow-none"> Software Developer </a></p>
+                                <a href="https://www.linkedin.com/in/ayushant-khandekar-3645ba220/" class="link-custom text-dark shadow-none">Read More</a>
                             </div>
                         </div>
 
@@ -288,9 +303,9 @@
                                 <!-- <div class="iconbox shadow rounded-4">
                                     <i class="lab text-light la-html5"></i>
                                 </div> -->
-                                <h4 class=" text-light">Suvidha Foundation</h4>
-                                <p>Worked has a Intern, Role <a class="text-light">Web developer</a> </p>
-                                <a href="https://www.linkedin.com/in/ayushant-khandekar-3645ba220/" class="link-custom text-dark">Read More</a>
+                                <h4 class=" text-light shadow-none">Suvidha Foundation</h4>
+                                <p class="shadow-none">Worked has a Intern, Role <a class="text-light shadow-none">Web developer</a> </p>
+                                <a href="https://www.linkedin.com/in/ayushant-khandekar-3645ba220/" class="link-custom text-dark shadow-none">Read More</a>
                             </div>
                         </div>
 
@@ -469,24 +484,24 @@
             <div class="row">
                 <div class="col-md-4 p-3 shadow-effect">
                     <div class="skill p-4 bg-base   rounded-4 ">
-                        <div class="iconbox shadow rounded-4">
-                            <i class="lab text-light la-linkedin"></i>
+                        <div class="iconbox shadow-none">
+                            <i class="lab text-light la-linkedin shadow-none"></i>
                         </div>
-                        <h4 class="mt-4 mb-2 text-light">Linkedin Profile</h4>
-                        <p>My linkedin Profile</p>
-                        <a href="https://www.linkedin.com/in/ayushant-khandekar-3645ba220/" class="link-custom text-dark">Read More</a>
+                        <h4 class="mt-4 mb-2 text-light shadow-none">Linkedin Profile</h4>
+                        <p class="shadow-none">My linkedin Profile</p>
+                        <a href="https://www.linkedin.com/in/ayushant-khandekar-3645ba220/" class="link-custom text-dark shadow-none">Read More</a>
                     </div>
                 </div>
 
 
                 <div class="col-md-4 p-3 shadow-effect">
                     <div class="skill p-4 bg-base   rounded-4 ">
-                        <div class="iconbox shadow rounded-4">
-                            <i class="lab text-light la-github"></i>
+                        <div class="iconbox shadow-none">
+                            <i class="lab text-light la-github shadow-none"></i>
                         </div>
-                        <h4 class="mt-4 mb-2 text-light">Github Profile</h4>
-                        <p>My Github Profile</p>
-                        <a href="https://github.com/Ayushant" class="link-custom text-dark">Read More</a>
+                        <h4 class="mt-4 mb-2 text-light shadow-none">Github Profile</h4>
+                        <p class="shadow-none">My Github Profile</p>
+                        <a href="https://github.com/Ayushant" class="link-custom text-dark shadow-none">Read More</a>
                     </div>
                 </div>
 
@@ -535,26 +550,67 @@
           <div class="right-side">
             <div class="topic-text">Send us a message</div>
             <p>If you have any work from me or any types of quries related to my work, you can send me message from here. It's my pleasure to help you.</p>
-          <form action="#">
+          <form id="contactForm" action="#">
             <div class="input-box">
-              <input type="text" placeholder="Enter your name">
+              <input type="text" id="name" placeholder="Enter your name">
             </div>
             <div class="input-box">
-              <input type="text" placeholder="Enter your email">
+              <input type="text"  id="email" placeholder="Enter your email">
             </div>
             <div class="input-box message-box">
-              
-            </div>
+                <textarea id="message" placeholder="Enter your message"></textarea>
+              </div>
+
             <div class="button ">
-              <input type="button"  class="text-dark" value="Send Now" >
+              <input type="button"  class="text-dark" value="Send Now" onclick="clearForm()" >
             </div>
           </form>
+          <div id="customAlert" class="custom-alert">Message sent successfully!</div>
+
         </div>
         </div>
+       
       </div>
-    
+     
+      <style>
+  .custom-alert {
+    display: none;
+    margin-top: 10px;
+    padding: 15px;
+    color: #fff;
+    background-color: gray;
+    border-radius: 5px;
+    font-weight: bold;
+    text-align: center;
+    animation: fadeInOut 3s ease-in-out;
+  }
 
+  @keyframes fadeInOut {
+    0% { opacity: 0; transform: translateY(-10px); }
+    10% { opacity: 1; transform: translateY(0); }
+    90% { opacity: 1; transform: translateY(0); }
+    100% { opacity: 0; transform: translateY(-10px); }
+  }
+</style>
 
+<script>
+  function clearForm() {
+    var name = document.getElementById("name").value.trim();
+    var email = document.getElementById("email").value.trim();
+    var message = document.getElementById("message").value.trim();
+
+    if (name && email && message) { 
+      document.getElementById("contactForm").reset();
+      var alertBox = document.getElementById("customAlert");
+      alertBox.style.display = "block";
+      setTimeout(function() {
+        alertBox.style.display = "none";
+      }, 3000); 
+    } else {
+      alert("Please fill out all fields before sending the message.");
+    }
+  }
+</script>
     
 
     <!-- js link -->
