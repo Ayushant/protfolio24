@@ -365,4 +365,9 @@ img{
  }
 }
 
-
+@media (max-width: 768px) {
+  .navbar {
+      display: none;
+      /* height: 10px; */
+  }
+}
